@@ -1,6 +1,6 @@
 :root{
     --MyRed:#ff0022;
-    --MyLighBlue1:#edfdfb;
+    --MyLighBlue:#edfdfb;
     --MyGreen: #b9bab8;
     --MyPink: #f8e9f2;
     --MyBlack: #04030f;
@@ -10,9 +10,12 @@
     src: url(../static/Assistant-Bold.ttf);
 }
 
-/*{
-    color: rgb(126, 126, 245);
-}*/
+*{
+    padding: 5px;
+    margin: 5px;
+    /*color: rgb(126, 126, 245);*/
+}
+
 body{
    /* border: 2px solid black;
     background-color:var(--MylighBlue1);*/
@@ -20,6 +23,15 @@ body{
     font-family:MyFontBold;
    /* background-repeat:no-repeat ;
     background-position: center;*/
+}
+form{
+    background-color: var(--MyPink);
+    height: 50vh;
+    width: 50vw;
+
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*
 #GoButton{
@@ -30,17 +42,19 @@ label.First2, input{
     background-color: rgb(244, 232, 218);
 }*/
 form h1{
-    color:var(--MyRed);
+    color:black;
+
 }
+
 a:link{
     color: black;
-    background-color: rgb(248, 221, 221);
+    background-color: var(--MyGreen);
 }
 a:visited{
-    background-color:rgb(149, 250, 149);
+    background-color:var(--MyRed);
 }
 a:hover{
-    background-color: rgb(242, 232, 203);
+    background-color:var(--MyLighBlue);
 }
 /*input[name]{
     background-color: rgb(247, 247, 203);

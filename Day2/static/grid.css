@@ -1,0 +1,94 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+    margin: 1px;
+    font-size: 20px;
+}
+/*#container{
+    display: grid;
+    grid-template-areas:
+    "item1 item1 item1"
+    "item2 item3 item3"
+    "item4 item4 item4";
+}*/
+#item1{
+    grid-area: header;
+    background-color: aqua;
+    height: 25vh;
+    animation-name: aquaBlink;
+    animation-duration: 1s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in-out;
+}
+#item2{
+    grid-area: menu;
+    background-color: blueviolet;
+    height: 50vh;
+}
+#item3{
+    grid-area: main;
+    background-color: gold;
+    height: 25vh;
+}
+#item4{
+    grid-area: right;
+    height: 25vh;
+    background-color: lightcoral;
+}
+#item5{
+    grid-area: footer;
+    height: 25vh;
+    background-color: darkcyan;
+}
+#container{
+    grid-template-areas:
+    "header header header header header"
+    "menu main main right right"
+    "menu footer footer footer footer";
+    display: grid;
+}
+/*#item1{
+    grid-area: header;
+}
+#item2{
+    grid-area: menu;
+}
+#item3{
+    grid-area: main;
+}
+#item4{
+    grid-area: right;
+}
+#item5{
+    grid-area: footer;
+}*/
+
+@media screen and(max-width: 500px) {
+    #container{
+        display: grid;
+        grid-template-areas:
+        "header"
+        "menu"
+        "main"
+        "right"
+        "footer";
+    }
+}
+
+@keyframes aquaBlink{
+    0%{background-color: aqua;}
+    30%{background-color: white;}
+    70%{background-color: blue;}
+    100%{background-color: aqua;}
+}
+
+#HeaderDiv{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+
+
+}
+button:hover{
+    transition: width 2s;
+}
