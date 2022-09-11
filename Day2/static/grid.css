@@ -16,7 +16,7 @@ body{
     background-color: aqua;
     height: 25vh;
     animation-name: aquaBlink;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 4;
     animation-timing-function: ease-in-out;
 }
@@ -40,6 +40,7 @@ body{
     height: 25vh;
     background-color: darkcyan;
 }
+
 #container{
     grid-template-areas:
     "header header header header header"
@@ -47,7 +48,8 @@ body{
     "menu footer footer footer footer";
     display: grid;
 }
-/*#item1{
+/*
+#item1{
     grid-area: header;
 }
 #item2{
