@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1.intro{
+        color: blue;
+    }
+    p.important{
+        color: green;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <script src="myJavaScript.js"></script>
+</head>
+<body>
+    <h1 style ="border-bottom:2px solid Tomato;" class="intro">Header 1</h1>
+    <p>A paragraph.</p>
+    <p class="important">Note that this is an important paragraph. :)</p>
+    <form action = "/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input autofocus type="submit" value="Submit">
+    </form>
+    <button onclick="ChangePic()">Change pic</button>
+
+    <img id="myPicture" src= "pic.jpg" alt="text">
+    <!--<script>
+        function ChangePic(){
+            document.getElementById("myPicture").src= "pic2.jpg"
+        }
+    </script>-->
+
+</body>
+</html>
